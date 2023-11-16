@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spotify But Better</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="p-0 m-0">
+    <div
+      class="w-full h-screen relative flex flex-row justify-start items-center"
+    >
+      <div
+        class="w-1/2 h-full bg-gradient-to-br from-emerald-300 to-emerald-600 flex relative flex-col px-10 justify-center items-center"
+      >
+        <h1
+          class="text-white drop-shadow-lg font-bold text-6xl w-full text-start mb-3"
+          style="font-family: limelight"
+        >
+          Spotify Embed Playlist
+        </h1>
+        <p
+          class="text-white/100 drop-shadow-lg font-light text-xl w-full text-start mb-5"
+        >
+          Just paste your Spotify playlist link, click "Show Playlist," and
+          enjoy the tunes, For Free!<br />
+          ( Keep In Mind It Just Needs The Code Of The Playlist, i.g After The
+          ...../playlist/ )
+        </p>
+        <div
+          class="text-green-300 drop-shadow-lg bg-white rounded-xl w-full h-14 text-lg font-bold px-5 m-0 flex justify-start items-center"
+        >
+          https://open.spotify.com/embed/playlist/
+          <textarea
+            class="resize-none text-green-300 h-7 pl-1 w-full border-none outline-none"
+            type="text"
+            id="playlistInput"
+            cols="39"
+            rows="1"
+          ></textarea>
+        </div>
+        <button
+          id="btn"
+          class="text-green-300 drop-shadow-lg bg-white rounded-xl w-full h-14 mt-5 text-lg transition-all font-bold hover:drop-shadow-2xl hover:scale-105 before:scale-75"
+          onclick="embedPlaylist()"
+        >
+          <span class="drop-shadow-sm">Show Playlist</span>
+        </button>
+      </div>
+      <div
+        class="w-1/2 h-full p-10 bg-gradient-to-bl from-slate-900 to-slate-700 flex relative flex-col px-10 justify-center items-center"
+      >
+        <h1
+          class="font-bold text-white text-lg absolute drop-shadow-lg"
+          id="OutputText"
+        >
+          No Playlist Loaded
+        </h1>
+        <div class="h-full w-full z-10" id="playlistEmbed"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
