@@ -1,6 +1,6 @@
 # Website
 
-## Link Coming Soon
+## https://itzharshhhh.github.io/Spotify-But-Better/
 
 # SpotifyButBetter
 
