@@ -17,3 +17,14 @@ function embedPlaylist() {
     document.getElementById("playlistEmbed").innerHTML = embedCode;
   }
 }
+
+function aboutMeShow() {
+  document.getElementById("show").style.visibility = "visible";
+  //rotate 90 degree
+  document.getElementById("rotate").style.display = "none";
+}
+
+function aboutMeHide() {
+  document.getElementById("show").style.visibility = "hidden";
+  document.getElementById("rotate").style.display = "block";
+}

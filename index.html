@@ -29,6 +29,7 @@
         >
           Spotify Embed Playlist
         </h1>
+
         <p
           class="text-white/100 drop-shadow-lg font-light text-xl w-full text-start mb-5"
         >
@@ -37,6 +38,7 @@
           ( Keep In Mind It Just Needs The Code Of The Playlist, i.g After The
           ...../playlist/ )
         </p>
+
         <div
           class="text-green-300 drop-shadow-lg bg-white rounded-xl w-full h-14 text-lg font-bold px-5 m-0 flex justify-start items-center"
         >
@@ -59,18 +61,30 @@
         </button>
 
         <div
-          class="w-fit h-12 pl-5 pr-10 pt-5 pb-4 transition-all hover:bg-white rounded-tr-full gap-5 bg-black/10 absolute bottom-0 left-0 justify-start items-center flex flex-row"
+          id="aboutMe"
+          onmouseover="aboutMeShow()"
+          onmouseleave="aboutMeHide()"
+          class="absolute bottom-5 shadow-2xl left-10 w-24 h-24 transition-all duration-500 hover:px-2 font-bold text-white hover:text-green-300 hover:bg-white hover:w-40 bg-black/20 flex gap-3 justify-center items-center rounded-full"
         >
-          <a href="https://github.com/ItzHarshhhh"
-            ><i
-              class="fa-brands fa-github fa-2xl transition-all hover:scale-125"
-            ></i
-          ></a>
-          <a href="https://instagram.com/its_me_harshhh"
-            ><i
-              class="fa-brands fa-instagram fa-2xl transition-all hover:scale-125 hover:text-rose-500"
-            ></i
-          ></a>
+          <p
+            id="rotate"
+            onmouseover="aboutMeShow()"
+            onmouseleave="aboutMeHide()"
+          >
+            About Me
+          </p>
+          <div id="show" class="absolute invisible gap-3">
+            <a class="mr-2" href="https://github.com/ItzHarshhhh"
+              ><i
+                class="fa-brands fa-github fa-2xl transition-all hover:text-black hover:scale-125"
+              ></i
+            ></a>
+            <a href="https://instagram.com/its_me_harshhh"
+              ><i
+                class="fa-brands fa-instagram fa-2xl transition-all hover:scale-125 hover:text-rose-500"
+              ></i
+            ></a>
+          </div>
         </div>
       </div>
       <div
