@@ -48,3 +48,38 @@
     opacity: 0;
   }
 }
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes color-change-5x {
+  0% {
+    background: #32cd32;
+  }
+  25% {
+    background: #0bda51;
+  }
+  50% {
+    background: #00ff00;
+  }
+  75% {
+    background: #00ff7f;
+  }
+  100% {
+    background: #00fa9a;
+  }
+}
