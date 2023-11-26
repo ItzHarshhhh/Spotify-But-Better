@@ -68,18 +68,18 @@
 
 @keyframes color-change-5x {
   0% {
-    background: #32cd32;
+    background: #19dcea;
   }
   25% {
-    background: #0bda51;
+    background: #b22cff;
   }
   50% {
-    background: #00ff00;
+    background: #ea2222;
   }
   75% {
-    background: #00ff7f;
+    background: #f5be10;
   }
   100% {
-    background: #00fa9a;
+    background: #3bd80d;
   }
 }
