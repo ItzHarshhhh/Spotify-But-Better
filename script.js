@@ -19,12 +19,15 @@ function embedPlaylist() {
 }
 
 function aboutMeShow() {
-  document.getElementById("show").style.visibility = "visible";
-  //rotate 90 degree
-  document.getElementById("rotate").style.display = "none";
+  document.getElementById("show").style.animation =
+    "opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) .2s both";
+  document.getElementById("rotate").style.animation =
+    "rotate-90 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)both";
 }
 
 function aboutMeHide() {
-  document.getElementById("show").style.visibility = "hidden";
-  document.getElementById("rotate").style.display = "block";
+  document.getElementById("show").style.animation =
+    "-opacity 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both";
+  document.getElementById("rotate").style.animation =
+    "rotate--90 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)both";
 }
